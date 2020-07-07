@@ -48,7 +48,7 @@ header .main_menu{
     position: absolute;
     left: 0; top: 0;
     padding: 10px;
-    display: none;
+    /* display: none; */
 }
 header .main_menu .main_login{
     display: flex;
