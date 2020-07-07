@@ -1,5 +1,5 @@
 #warp{
-    width: 1024px;
+    width: 1024px; height: 100vh;
     margin: 0 auto;
     background: #ebe1d2;
 }
@@ -37,7 +37,7 @@ header h1{
 }
 header h1 img{}
 
-header p{
+header > p{
     width: 20px;
 }
 header p img{}
@@ -48,7 +48,7 @@ header .main_menu{
     position: absolute;
     left: 0; top: 0;
     padding: 10px;
-    border: 1px solid #f00;
+    display: none;
 }
 header .main_menu .main_login{
     display: flex;
@@ -95,7 +95,9 @@ header .main_menu nav .one_depth > li > a small img{
     width: 17px;
     margin-bottom: -2px;
 }
-header .main_menu nav .one_depth li a > span{}
+header .main_menu nav .one_depth li a > span{
+    font-weight: bold;
+}
 
 header .main_menu nav .one_depth > li > a .plus{
     width: 17px; height: 17px;
@@ -119,6 +121,49 @@ header .main_menu nav .one_depth li .two_depth{
     padding-left: 34px;
 }
 header .main_menu nav .one_depth li .two_depth > li{
-    margin-top: 16px;
+    margin-top: 10px;
 }
-header .main_menu nav .one_depth li .two_depth li > a{}
+header .main_menu nav .one_depth li .two_depth li > a{
+    font-size: 14px;
+}
+
+header .main_menu .paul_question{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 8px;
+}
+header .main_menu .paul_question li{
+    width: 100%;
+    padding: 10px;
+}
+header .main_menu .paul_question li a{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #e9e9e9;
+}
+header .main_menu .paul_question li:last-child a{
+    border: none;
+}
+
+header .main_menu .paul_version{
+    width: 100%;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .main_menu .paul_version p{}
+header .main_menu .paul_version p span{
+    color: #acacac;
+}
+header .main_menu .paul_version p small{
+    padding: 8px;
+    background: #eaeaea;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+}
