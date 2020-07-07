@@ -9,6 +9,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 header .menu_icon{
@@ -39,6 +40,53 @@ header h1 img{}
 header p{
     width: 20px;
 }
-header p img{
-    width: 100%;
+header p img{}
+
+header .main_menu{
+    width: 50%; height: 100vh;
+    background: #fff;
+    position: absolute;
+    left: 0; top: 0;
+    padding: 10px;
+    border: 1px solid #f00;
 }
+header .main_menu .main_login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0;
+}
+header .main_menu .main_login > a:nth-of-type(1){
+    position: relative;
+    color: #777;
+}
+header .main_menu .main_login > a:nth-of-type(1)::after{
+    content: '';
+    display: inline-block;
+    width: 9px; height: 1px;
+    background: #777;
+    position: absolute;
+    right: -18px; top: 7px;
+    transform: rotate(45deg);
+}
+header .main_menu .main_login > a:nth-of-type(1)::before{
+    content: '';
+    display: inline-block;
+    width: 9px; height: 1px;
+    background: #777;
+    position: absolute;
+    right: -18px; bottom: 7px;
+    transform: rotate(-45deg);
+}
+
+header .main_menu nav{}
+header .main_menu nav .one_depth{}
+header .main_menu nav .one_depth li{}
+header .main_menu nav .one_depth li a{}
+header .main_menu nav .one_depth li a small{}
+header .main_menu nav .one_depth li a small img{}
+header .main_menu nav .one_depth li a span{}
+
+header .main_menu nav .one_depth li .two_depth{}
+header .main_menu nav .one_depth li .two_depth li{}
+header .main_menu nav .one_depth li .two_depth li a{}
