@@ -39,4 +39,6 @@ header h1 img{}
 header p{
     width: 20px;
 }
-header p img{}
+header p img{
+    width: 100%;
+}
