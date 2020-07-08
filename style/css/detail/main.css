@@ -48,7 +48,7 @@ header .main_menu{
     position: absolute;
     left: 0; top: 0;
     padding: 10px;
-    /* display: none; */
+    display: none;
 }
 header .main_menu .main_login{
     display: flex;
@@ -166,4 +166,46 @@ header .main_menu .paul_version p small{
     background: #eaeaea;
     border: 1px solid #d4d4d4;
     border-radius: 10px;
+}
+
+#container{
+    padding: 14px;
+}
+/* 980 */
+.hello_login{
+    height: 29vh;
+    border: 1px solid #f00;
+}
+.hello_login p{}
+.hello_login p span{}
+.hello_login p strong{}
+.hello_login p small{}
+
+.hello_login .join_login{}
+
+.crown_order{
+    width: 50%; height: 30.6vh;
+    float: left;
+    border: 1px solid #f00;
+}
+.quick_order{
+    width: 50%; height: 30.6vh;
+    float: right;
+    border: 1px solid #f00;
+}
+.paul_coupon{
+    width: 50%; height: 16vh;
+    float: left;
+    border: 1px solid #f00;
+}
+.gift_item{
+    width: 50%; height: 16vh;
+    float: right;
+    border: 1px solid #f00;
+}
+
+footer{
+    height: 16vh;
+    clear: both;
+    border: 1px solid #f00;
 }
