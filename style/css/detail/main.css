@@ -1,5 +1,6 @@
 #warp{
-    width: 1024px; height: 100vh;
+    width: 100%; height: 100vh;
+    max-width: 1024px;
     margin: 0 auto;
     background: #ebe1d2;
 }
@@ -174,34 +175,79 @@ header .main_menu .paul_version p small{
 /* 980 */
 .hello_login{
     height: 29vh;
-    border: 1px solid #f00;
+    /* border: 1px solid #f00; */
 }
 .hello_login p{}
-.hello_login p span{}
-.hello_login p strong{}
-.hello_login p small{}
+.hello_login p span{
+    display: block;
+    font-size: 1.25rem;
+    color: #503629;
+}
+.hello_login p strong{
+    font-size: 1.5625rem;
+    color: #503629;
+    display: block;
+    margin-bottom: 16px;
+}
+.hello_login p small{
+    color: #503629;
+    font-size: 0.875rem;
+    display: block;
+}
 
 .hello_login .join_login{}
 
 .crown_order{
-    width: 50%; height: 30.6vh;
     float: left;
     border: 1px solid #f00;
 }
 .quick_order{
-    width: 50%; height: 30.6vh;
     float: right;
     border: 1px solid #f00;
 }
 .paul_coupon{
-    width: 50%; height: 16vh;
     float: left;
     border: 1px solid #f00;
 }
 .gift_item{
-    width: 50%; height: 16vh;
     float: right;
     border: 1px solid #f00;
+}
+.big_icon{
+    width: 50%; height: 30.6vh;
+}
+.big_icon figure{
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.big_icon figure p{
+    width: 45px;
+}
+.big_icon figure p img{}
+.small_icon{
+    width: 50%; height: 16vh;
+}
+.small_icon figure{
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small_icon figure p{
+    width: 24px;
+    margin-right: 8px;
+}
+.small_icon figure p img{
+    margin-bottom: -6px;
+}
+.small_icon figure figcaption{}
+section figure figcaption{
+    font-size: 1.5rem;
+    color: #503629;
+    font-weight: bold;
 }
 
 footer{
