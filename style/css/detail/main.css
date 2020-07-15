@@ -45,11 +45,12 @@ header p img{}
 
 header .main_menu{
     width: 50%; height: 100vh;
+    min-width: 280px;
     background: #fff;
     position: absolute;
     left: 0; top: 0;
     padding: 10px;
-    display: none;
+    /* display: none; */
 }
 header .main_menu .main_login{
     display: flex;
