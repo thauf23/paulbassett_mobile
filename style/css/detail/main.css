@@ -98,7 +98,7 @@ header .main_menu nav .one_depth > li > a small img{
     margin-bottom: -2px;
 }
 header .main_menu nav .one_depth li a > span{
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 header .main_menu nav .one_depth > li > a .plus{
@@ -121,6 +121,7 @@ header .main_menu nav .one_depth > li > a .plus > span:nth-of-type(2){
 
 header .main_menu nav .one_depth li .two_depth{
     padding-left: 34px;
+    display: none;
 }
 header .main_menu nav .one_depth li .two_depth > li{
     margin-top: 10px;
