@@ -12,7 +12,6 @@ header{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    border: 1px solid #f00;
 }
 
 header .menu_icon{
@@ -180,6 +179,7 @@ header .main_menu .paul_version p small{
 /* 980 */
 .hello_login{
     height: 40%;
+    position: relative;
 }
 .hello_login p{}
 .hello_login p span{
@@ -199,7 +199,23 @@ header .main_menu .paul_version p small{
     display: block;
 }
 
-.hello_login .join_login{}
+.hello_login .join_login{
+    position: absolute;
+    right: 0; bottom: 7px;
+}
+.hello_login .join_login a{
+    width: 82px;
+    padding: 7px;
+    font-size: 0.875rem;
+    color: #9d887d;
+    text-align: center;
+    border:1px solid #9d887d;
+    border-radius: 5px;
+}
+.hello_login .join_login a:nth-of-type(2){
+    color: #fff;
+    background: #9d887d;
+}
 
 .big_icon{
     width: 50%; height: 40%;
