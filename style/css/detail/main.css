@@ -3,6 +3,7 @@
     max-width: 1024px;
     margin: 0 auto;
     background: #ebe1d2;
+    overflow: hidden;
 }
 
 header{
@@ -49,9 +50,10 @@ header .main_menu{
     min-width: 280px;
     background: #fff;
     position: absolute;
-    left: 0; top: 0;
+    left: -50%; top: 0;
+    z-index: 100;
     padding: 10px;
-    display: none;
+    transition: .5s;
 }
 header .main_menu .main_login{
     display: flex;
