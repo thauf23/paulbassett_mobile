@@ -3,6 +3,9 @@ $(function(){
 
     const bannerImg = $(".banner_img");
     const aImg = $(".banner_img a");
+    const bannerNumber = $(".banner_number");
+    const numberSpan = $(".banner_number span");
+    let m = 0;
 
     // ----------- a tag location ---------------------------------
     for(var i=0; i<aImg.length; i++){
@@ -11,23 +14,32 @@ $(function(){
             left: i*72+'%'
         });
     }
-
-    // ----------- a tag move ---------------------------------
-    let m = 0;
+    
+    // ----------- banner move ---------------------------------
+    numberSpan.eq(0).css({
+        background: "rgba(255, 255, 255, 1)"
+    });
     function infinite(){
         ++m;
         bannerImg.animate({
             left: -100*m+"%"
         },20);
-        if(m > aImg.length-2){
+        console.log(m);
+        numberSpan.eq(m-1).css({
+            background: "rgba(255, 255, 255, .5)"
+        });
+        numberSpan.eq(m).css({
+            background: "rgba(255, 255, 255, 1)"
+        });
+        if(m > aImg.length-1){
             bannerImg.animate({left: 0});
             m = 0;
+            numberSpan.eq(m).css({
+                background: "rgba(255, 255, 255, 1)"
+            });
         }
     }
     setInterval(infinite,5000);
-
-    // ----------- banner number move ---------------------------------
-
 
     //end
 });
