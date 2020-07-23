@@ -4,6 +4,10 @@ $(function(){
     const menuIcon = document.querySelector(".menu_icon");
     const mainMenu = document.querySelector(".main_menu");
     const bodyBackground = document.querySelector(".body_background");
+    const oneDepth = document.querySelector(".one_depth");
+
+    const runOut = $(".run_out");
+    const twoDepth = $(".two_depth");
 
     //menu open
     menuIcon.addEventListener("click", function(){
@@ -17,7 +21,12 @@ $(function(){
         bodyBackground.style.zIndex = "-1";
     });
 
-    
-    // console.log("a");
+    //two depth open
+    $(".see_depth").on("click", function(e){
+        e.preventDefault();
+        $(this).find(runOut).toggle();
+        var moter = this.parentNode;
+        $(moter).find(twoDepth).toggle();
+    });
     //end
 });

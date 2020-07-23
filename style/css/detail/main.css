@@ -107,9 +107,7 @@ header .main_menu nav .one_depth > li > a small img{
     width: 17px;
     margin-bottom: -2px;
 }
-header .main_menu nav .one_depth li a > span{
-    /* font-weight: bold; */
-}
+header .main_menu nav .one_depth li a > span{}
 
 header .main_menu nav .one_depth > li > a .plus{
     width: 17px; height: 17px;
