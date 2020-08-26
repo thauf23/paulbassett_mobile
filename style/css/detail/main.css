@@ -57,7 +57,7 @@ header .main_menu{
     min-width: 280px;
     background: #fff;
     position: absolute;
-    left: -50%; top: 0;
+    left: -100%; top: 0;
     z-index: 100;
     padding: 10px;
     transition: .5s;
