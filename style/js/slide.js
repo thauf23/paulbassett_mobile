@@ -3,7 +3,6 @@ $(function(){
 
     const bannerImg = $(".banner_img");
     const aImg = $(".banner_img a");
-    const bannerNumber = $(".banner_number");
     const numberSpan = $(".banner_number span");
     let m = 0;
 
@@ -23,7 +22,7 @@ $(function(){
         ++m;
         bannerImg.animate({
             left: -100*m+"%"
-        },20);
+        },10);
         console.log(m);
         numberSpan.eq(m-1).css({
             background: "rgba(255, 255, 255, .5)"
@@ -39,7 +38,7 @@ $(function(){
             });
         }
     }
-    setInterval(infinite,5000);
+    setInterval(infinite,4000);
 
     //end
 });
