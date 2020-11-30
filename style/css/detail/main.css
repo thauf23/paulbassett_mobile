@@ -32,7 +32,7 @@ header .menu_icon span{
     position: absolute;
     left: 0;
 }
-header .menu_icon span:nth-of-type(2){
+header .menu_icon span:nth-of-type(1){
     top: 0;
 }
 header .menu_icon span:nth-of-type(2){
@@ -57,7 +57,7 @@ header .main_menu{
     min-width: 280px;
     background: #fff;
     position: absolute;
-    left: -50%; top: 0;
+    left: -100%; top: 0;
     z-index: 100;
     padding: 10px;
     transition: .5s;
@@ -193,6 +193,7 @@ header .main_menu .paul_version p small{
     display: block;
     font-size: 1.25rem;
     color: #503629;
+    margin-top: 16px;
 }
 .hello_login p strong{
     font-size: 1.5625rem;
@@ -204,6 +205,7 @@ header .main_menu .paul_version p small{
     color: #503629;
     font-size: 0.875rem;
     display: block;
+    margin-bottom: 2px;
 }
 
 .hello_login .join_login{
@@ -259,6 +261,9 @@ header .main_menu .paul_version p small{
 section figure figcaption{
     font-size: 1.5rem;
     color: #503629;
+}
+section.big_icon figure figcaption{
+    padding-bottom: 10px;
 }
 .crown_order{
     float: left;

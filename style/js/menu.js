@@ -17,7 +17,7 @@ $(function(){
     
     //menu close
     bodyBackground.addEventListener("click", function(){
-        mainMenu.style.left = "-50%";
+        mainMenu.style.left = "-100%";
         bodyBackground.style.zIndex = "-1";
     });
 

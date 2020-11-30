@@ -1,0 +1,24 @@
+@media (min-width:1024px){}
+@media (min-width:768px){}
+@media (min-width:480px){}
+@media (min-width:320px) and (max-width:767px){
+/* nav */
+
+/* text */
+    .hello_login p span{
+        font-size: 1rem;
+    }
+    .hello_login p strong{
+        font-size: 1.125rem;
+        margin-bottom: 8px;
+    }
+    .hello_login p small{
+        font-size: 0.75rem;
+        margin-bottom: 0px;
+    }
+
+/* section */
+    section figure figcaption{
+        font-size: 1.125rem;
+    }
+}
